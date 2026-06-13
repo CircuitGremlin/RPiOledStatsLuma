@@ -1,4 +1,8 @@
-#!/bin/bash
+#!/bin/sh
+
+# Go into home directory
+echo "Go into home directory"
+cd ~/
 
 # Get repo
 echo "Get repo"
