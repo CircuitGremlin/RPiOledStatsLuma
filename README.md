@@ -35,7 +35,7 @@ Pages:
 | ![Page Network](https://user-images.githubusercontent.com/122442255/216108996-47804d36-f2cc-4833-8674-c3b6c526278b.gif) | ![Page Docker](https://user-images.githubusercontent.com/122442255/216109067-96720283-c834-4be4-b8bc-fe699c7600cb.gif) |
 
 # Setup your display
-## Coding
+### Coding
 You will need to edit ![config.yml](https://github.com/circuitgremlin/RPiOledStatsLuma/blob/main/config.yml)
 ```
 oled:
@@ -50,7 +50,7 @@ oled:
   i2c_address: 0x3C
   driver: sh1106
 ```
-## Wiring
+### Wiring
 See ![https://github.com/rm-hull/luma.oled](https://github.com/rm-hull/luma.oled)
 ## Button(s)
 Any GPIO pin you like. Connected to GND (Ground) which is pulled up internally by Raspberry Pi
@@ -74,16 +74,16 @@ wget -qO- https://raw.githubusercontent.com/circuitgremlin/RPiOledStatsLuma/main
 ```
 
 # Installation guide
-## 1. Update system
+### 1. Update system
 ```
 sudo apt update && sudo apt -y full-upgrade
 ```
-## 2. Install needed packages
+### 2. Install needed packages
 Install apt packages
 ```
 sudo apt install -y python3 python3-pip i2c-tools git
 ```
-## 3. Enable I2C interface
+### 3. Enable I2C interface
 Enabling I2C on the Raspberry Pi using one simple command
 ```
 sudo raspi-config nonint do_i2c 0
@@ -116,7 +116,7 @@ Reboot if necessary
 ```
 sudo reboot
 ```
-## 4. Enable Docker memory stats
+### 4. Enable Docker memory stats
 **(You can skip this step if you are not using Docker)**
 
 Edit `/boot/cmdline.txt`
@@ -151,7 +151,7 @@ Reboot
 ```
 sudo reboot
 ```
-## 5. Clone git repository
+### 5. Clone git repository
 ```
 git clone https://github.com/blenherr/RPiOledStatsLuma.git
 ```
@@ -159,7 +159,7 @@ Open directory
 ```
 cd RPiOledStatsLuma
 ```
-## 6. Setup virtual python environment
+### 6. Setup virtual python environment
 Create virtual python environment
 ```
 python3 -m venv --system-site-packages pyvenv
@@ -305,7 +305,7 @@ buttons:
 python3 main.py
 ```
 # Add service OR crontab
-## Add service
+### Add service
 Create `RPiOledStatsLuma.service` file
 ```
 sudo nano /lib/systemd/system/RPiOledStatsLuma.service
@@ -336,7 +336,7 @@ Start service
 ```
 sudo systemctl start RPiOledStatsLuma
 ```
-## Add crontab
+### Add crontab
 Edit crontab
 ```
 crontab -e
