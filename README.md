@@ -2,7 +2,7 @@
 
 - [Information](#information)
 - [Setup your display](#setup-your-display)
-- [Installation file](#installation-file)
+- [Installation files](#installation-files)
 - [Installation guide](#installation-guide)
 - [Configuration](#configuration)
 - [Testing](#testing)
@@ -60,6 +60,10 @@ Any GPIO pin you like. Connected to GND (Ground) which is pulled up internally b
 ## Install needed packages and enable I2C interface
 ```
 wget -qO- https://raw.githubusercontent.com/circuitgremlin/RPiOledStatsLuma/refs/heads/main/install_packages_and_i2c.sh | bash
+```
+## Install repo
+```
+wget -qO- https://raw.githubusercontent.com/circuitgremlin/RPiOledStatsLuma/refs/heads/main/install_repo.sh | bash
 ```
 
 # Installation guide
