@@ -56,7 +56,7 @@ See ![https://github.com/rm-hull/luma.oled](https://github.com/rm-hull/luma.oled
 Any GPIO pin you like. Connected to GND (Ground) which is pulled up internally by Raspberry Pi
 
 # Installation files
-## Install needed packages and enable I2C interface
+### Install needed packages and enable I2C interface
 ```
 wget -qO- https://raw.githubusercontent.com/circuitgremlin/RPiOledStatsLuma/main/install_packages_and_i2c.sh | bash
 ```
@@ -64,9 +64,13 @@ Reboot if necessary
 ```
 sudo reboot
 ```
-## Install repo
+### Install repo
 ```
 wget -qO- https://raw.githubusercontent.com/circuitgremlin/RPiOledStatsLuma/main/install_repo.sh | bash
+```
+### Install repo
+```
+wget -qO- https://raw.githubusercontent.com/circuitgremlin/RPiOledStatsLuma/main/install_service.sh | bash
 ```
 
 # Installation guide
