@@ -35,7 +35,6 @@ Pages:
 | ![Page Network](https://user-images.githubusercontent.com/122442255/216108996-47804d36-f2cc-4833-8674-c3b6c526278b.gif) | ![Page Docker](https://user-images.githubusercontent.com/122442255/216109067-96720283-c834-4be4-b8bc-fe699c7600cb.gif) |
 
 # Setup your display
-See ![https://github.com/rm-hull/luma.oled](https://github.com/rm-hull/luma.oled)
 ## Coding
 You will need to edit ![config.yml](https://github.com/circuitgremlin/RPiOledStatsLuma/blob/main/config.yml)
 ```
