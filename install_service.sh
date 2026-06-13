@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cd ~/RPiOledStatsLuma
+
 DIRNAME=$(dirname "$(realpath $0)")
 TEMP_DIR=$(mktemp -d)
 
