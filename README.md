@@ -59,7 +59,7 @@ Any GPIO pin you like. Connected to GND (Ground) which is pulled up internally b
 # Installation files
 ## Install needed packages and enable I2C interface
 ```
-wget -qO- https://github.com/circuitgremlin/RPiOledStatsLuma/blob/main/install_packages_and_i2c.sh | bash
+wget -qO- https://raw.githubusercontent.com/circuitgremlin/RPiOledStatsLuma/refs/heads/main/install_packages_and_i2c.sh?token=GHSAT0AAAAAAD6AP6LOGBKCRDAMBXQFG4WK2RNRUX | bash
 ```
 
 # Installation guide
