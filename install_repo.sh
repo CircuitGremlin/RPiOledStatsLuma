@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Go into home directory
 echo "Go into home directory"
