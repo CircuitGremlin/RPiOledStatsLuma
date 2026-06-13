@@ -1,0 +1,121 @@
+# OLED Stats Display Script For RaspberryPi - Configuration File
+
+oled:
+
+# Oled definitions
+#
+#   i2c_port: number (Typically: 1)
+#   i2c_address: number (Typically: 0x3C or 60)
+#   driver: Only 128x64 pixel displays are supportet! (See https://github.com/rm-hull/luma.oled)
+
+  i2c_port: 1
+  i2c_address: 0x3C
+  driver: sh1106
+
+
+main:
+
+# Main definitions
+#
+#   showicons: yes, no (Is always required)
+#   mode: auto, manual (Is always required)
+#   autodelay: time in seconds (Disabled in manual mode)
+#   screensaver: Time in minutes, 0 for off (Disabled in auto mode)
+#
+# Examples:
+#
+#  showicons: "yes"
+#  mode: "auto"
+#  autodelay: "10"
+#
+#  showicons: "yes"
+#  mode: "manual"
+#  screensaver: "1"
+
+  showicons: "yes"
+  mode: "manual"
+  screensaver: "1"
+
+
+pages:
+
+# You can set up as many pages as you like,
+# but a minimum of two pages is required
+#
+# cpumem - Displays CPU and memory statistics
+#   type: cpumem
+#   icon: not supported (only one icon)
+#   value: not supported
+#
+# Example:
+#
+#  - type: "cpumem"
+
+  - type: "cpumem"
+
+# storage - Displays statistics from a mount point of your choice
+#   type: storage
+#   icon: emmc, hdd, sd, ssd (Just shows a different image)
+#   value: Your used mount point
+#
+# Example:
+#
+#  - type: "storage"
+#    icon: "sd"
+#    value: "/"
+
+  - type: "storage"
+    icon: "sd"
+    value: "/"
+  - type: "storage"
+    icon: "sd"
+    value: "/boot/firmware"
+
+# network - Displays network statistics from an interface of your choice
+#   type: network
+#   icon: lan, wifi (Just shows a different image)
+#   value: Your used interface (eth0, wlan0)
+#
+# Example:
+#
+#  - type: "network"
+#    icon: "lan"
+#    value: "eth0"
+
+  - type: "network"
+    icon: "lan"
+    value: "eth0"
+
+# docker - Displays Docker statistics
+#
+#   type: docker
+#   icon: not supported (only one icon)
+#   value: not supported
+#
+# Example:
+#
+#  - type: "docker"
+
+#  - type: "docker"
+
+
+buttons:
+
+# At least one button is required in manual mode.
+# Buttons are ignored in Auto mode.
+#
+#   gpio: Your used GPIO pin
+#   func: next, previous
+#       next     - Go to the next page
+#       previous - Go to the previous page
+#
+# Examples:
+#
+#    gpio: "22"
+#    func: "next"
+#
+#    gpio: "23"
+#    func: "previous"
+
+  - gpio: "17"
+    func: "next"
