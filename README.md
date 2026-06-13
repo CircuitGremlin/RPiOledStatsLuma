@@ -7,6 +7,7 @@
 - [Configuration](#configuration)
 - [Testing](#testing)
 - [Add service OR crontab](#add-service-or-crontab)
+- [Known issues](#known-issues)
 - [Contribute](#contribute)
 - [Acknowledgment](#acknowledgment)
 
@@ -346,6 +347,10 @@ Add following lines at the bottom and change `your_user_goes_here` with your own
 @reboot python3 /home/your_user_goes_here/RPiOledStatsLuma/main.py &
 ```
 Save and close
+
+# Known issues
+### Oled displays
+Wrong column offset 1.54" CH1116/SH1106 I2C: https://github.com/rm-hull/luma.oled/issues/376
 
 # Contribute
 - Let me know if you have another idea for a new page or if you found a problem. Thank you!
