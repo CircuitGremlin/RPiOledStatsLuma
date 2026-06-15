@@ -350,7 +350,8 @@ Save and close
 
 # Known issues
 ### Oled displays
-Wrong column offset 1.54" CH1116/SH1106 I2C: https://github.com/rm-hull/luma.oled/issues/376
+Wrong column offset 1.54" CH1116/SH1106 I2C: https://github.com/rm-hull/luma.oled/issues/376.
+Change line 167 from `self._const.SETHIGHCOLUMN,      0xB2, 0xC8,` to `self._const.SETHIGHCOLUMN,      0xB0, 0xC8,`
 ```
 nano ~/RPiOledStatsLuma/pyvenv/lib/python3.13/site-packages/luma/oled/device/__init__.py
 ```
