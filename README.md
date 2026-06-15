@@ -167,7 +167,7 @@ python3 -m venv --system-site-packages pyvenv
 ```
 Activate virtual python environment
 ```
- source ./pyvenv/bin/activate
+source ./pyvenv/bin/activate
 ```
 Install pip packages
 ```
